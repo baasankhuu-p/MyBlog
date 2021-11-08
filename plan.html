@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/png" sizes="16x16" href="https://baasankhuu123.github.io/MyBlog/Design/Logo.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Blog Website Online">
+    <meta name="keywords" content="Миний төлөвлөгөө, Миний Журнал, My Journal,My Blog,Миний блог,Англи хэл сурах">
+    <meta name="author" content="Software engineer Baasankhuu">
+    <script src="https://kit.fontawesome.com/54084b62dd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/calendar.css">
+    <title>My Blog | Baasankhuu</title>
+</head>
+<body>
+    <header>
+        <!--Logo image-->
+        <img src="/Design/Logo.png" alt="logo" class="logo" title="logo">
+        <!--Searching all-->
+        <div class="searches">
+            <form action="/action_page.php" class="search-form">
+                <input type="search" id="search-box" placeholder="Хайх үгээ оруулна уу.." name="search">
+                <button type="submit"><i class="fa fa-search"></i>Хайх</button>
+        </div>
+        <div class="user">
+            <a href="#"><i class="fas fa-user-shield"></i></a>
+        </div>
+    </header>
+    <!--Link pages-->
+    <nav id="navbar">
+        <ul>
+            <li>
+                <i class="fas fa-home"> 
+                    <a href="#">Home</a>
+                </i>
+            </li>
+            <li>
+                <i class="fas fa-user-circle"> 
+                    <a href="#">About</a>
+                </i>
+            </li>
+            <li>
+                <i class="fas fa-paper-plane"> 
+                    <a href="#">Plan</a>
+                </i>
+            </li>
+            <li>
+                <i class="fas fa-book"> 
+                    <a href="#">English</a>
+                </i>
+            </li>
+            <li>
+                <i class="fas fa-calendar-check"> 
+                    <a href="#">Shedule</a>
+                </i>
+            </li>
+            <li>
+                <i class="fas fa-file-word"> 
+                    <a href="#">Nice-words</a>
+                </i>
+            </li>
+            <li>
+                <i class="fas fa-server"> 
+                    <a href="#">Task database</a>
+                </i>
+            </li>
+        </ul>
+    </nav>
+     <!--Ikh biy-->
+    <main id="main_all">
+        <!--Calendar-->
+        <section class="light">
+            <div class="calendar">
+                <div class="calendar-header">
+                    <span class="month-picker" id="month-picker">February</span>
+                    <div class="year-picker">
+                        <span class="year-change" id="prev-year">
+                            <pre><</pre>
+                        </span>
+                        <span id="year">2021</span>
+                        <span class="year-change" id="next-year">
+                            <pre>></pre>
+                        </span>
+                    </div>
+                </div>
+                <div class="calendar-body">
+                    <div class="calendar-week-day">
+                        <div title="Ням">Ня</div>
+                        <div title="Даваа">Да</div>
+                        <div title="Мягмар">Мя</div>
+                        <div title="Лхагва">Лх</div>
+                        <div title="Пүрэв">Пүр</div>
+                        <div title="Баасан">Ба</div>
+                        <div title="Бямба">Бя</div>
+                    </div>
+                    <div class="calendar-days"></div>
+                </div>
+                <div class="calendar-footer">
+                    <div class="toggle">
+                        <span>Dark Mode</span>
+                        <div class="dark-mode-switch">
+                            <div class="dark-mode-switch-ident"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="month-list"></div>
+            </div>
+            <script src="/js/calendar.js"></script>
+            <div id="Calendar_tailbar">
+                <div class="calendar1">
+                    <p>-Тайлбар</p>
+                </div>
+                <div class="calendar2">
+                    <p>-Тайлбар</p>
+                </div>
+                <div class="calendar3">
+                    <p>-Тайлбар</p>
+                </div>
+            </div>
+        </section>
+        <!--Hicheeliin huwaari-->
+        <section class="plan_week">
+            <div id="Date_day"></div>
+            <div class="days days1">
+                <div class="date"></div>
+                <div class="title title1"></div>
+                <div class="lesson lesson1"></div>
+            </div>
+            <div class="days days2">
+                <div class="date"></div>
+                <div class="title title2"></div>
+                <div class="lesson lesson2"></div>
+            </div>
+            <div class="days days3">
+                <div class="date"></div>
+                <div class="title title3"></div>
+                <div class="lesson lesson3"></div>
+            </div>
+            <div class="days days4">
+                <div class="date"></div>
+                <div class="title title4"></div>
+                <div class="lesson lesson4"></div>
+            </div>
+            <div class="days days5">
+                <div class="date"></div>
+                <div class="title title5"></div>
+                <div class="lesson lesson5"></div>
+            </div>
+            <div class="days days6">
+                <div class="date"></div>
+                <div class="title title6"></div>
+                <div class="lesson lesson6"></div>
+            </div>
+            <div class="days days7">
+                <div class="date"></div>
+                <div class="title title7"></div>
+                <div class="lesson lesson7"></div>
+            </div>
+        </section>
+    </main>
+<!--social footer-->
+<footer id="social" >
+    <a href="#">
+        <img src="/Design/social_image/social1.png" alt="facebook" class="social facebook" title="facebook">
+    </a>
+    <a href="#">
+        <img src="/Design/social_image/social2.png" alt="messenger" class="social messenger" title="messenger">
+    </a>
+    <a href="#">
+        <img src="/Design/social_image/social3.png" alt="instagram" class="social instagram" title="instagram">
+    </a>
+    <a href="#">
+        <img src="/Design/social_image/social4.png" alt="github" class="social github" title="github">
+    </a>
+    <a href="#">
+        <img src="/Design/social_image/social5.png" alt="youtube" class="social youtube" title="youtube">
+    </a>
+</footer>
+<div id="copyright">&copy;2021 My Blog Website</div>
+</body>
+</html>
